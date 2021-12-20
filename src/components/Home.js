@@ -86,7 +86,7 @@ const Home = () => {
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=80"
+                  src="https://d1ih8jugeo2m5m.cloudfront.net/2021/08/venta-de-artesanias-por-internet-700x400.jpg"
                   className="w-full align-middle rounded-t-lg"
                 />
                 <blockquote className="relative p-8 mb-4">
@@ -245,25 +245,25 @@ const Home = () => {
               <div className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0">
                 <img
                   alt="..."
-                  src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/component-btn.png"
+                  src="https://diariobasta.com/wp-content/uploads/2021/04/artesanias-mexicanas-emblematicas.jpg"
                   className="w-full align-middle rounded absolute shadow-lg"
                   style={{ maxWidth: 100, left: 145, top: -29, zIndex: 3 }}
                 />
                 <img
                   alt="..."
-                  src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/component-profile-card.png"
+                  src="http://astrolabio.com.mx/wp-content/uploads/2015/10/ae35121fca76999d1c597c34fa11f9cf.jpg"
                   className="w-full align-middle rounded-lg absolute shadow-lg"
                   style={{ maxWidth: 210, left: 260, top: -160 }}
                 />
                 <img
                   alt="..."
-                  src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/component-info-card.png"
+                  src="https://imagenescityexpress.scdn6.secure.raxcdn.com/sites/default/files/inline-images/Oaxaca-artesanias.jpg"
                   className="w-full align-middle rounded-lg absolute shadow-lg"
                   style={{ maxWidth: 180, left: 40, top: -225, zIndex: 2 }}
                 />
                 <img
                   alt="..."
-                  src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/component-info-2.png"
+                  src="http://www.teorema.com.mx/wp-content/uploads/artesan%C3%ADas.jpg"
                   className="w-full align-middle rounded-lg absolute shadow-2xl"
                   style={{ maxWidth: 200, left: -50, top: 25 }}
                 />
@@ -275,7 +275,7 @@ const Home = () => {
                 />
                 <img
                   alt="..."
-                  src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/component-btn-pink.png"
+                  src="https://www.yoinfluyo.com/images/stories/hoy/jun19/260619/artesanias_p.jpg"
                   className="w-full align-middle rounded absolute shadow-xl"
                   style={{ maxWidth: 120, left: 195, top: 95 }}
                 />

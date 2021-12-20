@@ -6,7 +6,7 @@
 
 //1.IMPORT
 import { useReducer } from "react";
-// import axiosClient from "../../config/axios";
+import axiosClient from "../../config/axios";
 import ArteContext from "./ArteContext";
 import ArteReducer from "./ArteReducer";
 
@@ -31,7 +31,6 @@ const ArteState = (props) => {
             arteFav: "",
             arteStock: "",
         },
-        hola: "mundo"
     }
 
 
@@ -41,63 +40,55 @@ const ArteState = (props) => {
 
 
     //3.Funciones de cambio en estado Global
-    const changeText = () => {
-
-        dispatch({
-            type: "CHANGE_TEXT",
-            //datos reales que cambia el estado global
-            payload: "Estoy aprendiendo context sin morir"
-        })
-
-    }
-
-   /* const getGuitars = async() => {
+        const getArtesanias = async() => {
         //console.log("Obteniendo Guitarras....") <-- al darle click en comp./guit/index
-        const res = await axiosClient.get("guitars/readall")
+        const res = await axiosClient.get("artesanias/leer")
         console.log(res)
 		
         const list = res.data.data
         console.log(list) 
 
 		dispatch({
-			type: "GET_GUITARS",
+			type: "GET_ARTESANIAS",
 			payload: list
 		})
     }
 
-    const getGuitar = async(guitarId) => {
+        const getArtesania = async(arteId) => {
 
-        const res = await axiosClient.get(`guitars/readone/${guitarId}`)
+        const res = await axiosClient.get(`artesanias/leeruna/${arteId}`)
         //console.log(res) // {data: {…}, status: 200, statusText: 'OK', headers: {…}, config: {…}, …} se invoca en Single/index.js
-        const selectedGuitar = res.data.data
+        const selectedArte = res.data.data
 
         dispatch({
-            type: "GET_GUITAR",
-            payload: selectedGuitar
+            type: "GET_ARTESANIA",
+            payload: selectedArte
         })
-
     }
 
-	const createGuitar = async (form) => {
-
-		const res = await axiosClient.post("guitars/create", form)
-
-		console.log(res) // {data: {…}, status: 200, statusText: 'OK', headers: {…}, config: {…}, …}
-
+	    const createArtesania = async (form) => {
+    		const res = await axiosClient.post("artesanias/crear", form)
+		    console.log(res) 
 	}
 
-	const updateGuitar = async (form, idGuitar) => {
+	    const updateArtesania = async (form, idArte) => {
 
-		const res = await axiosClient.put(`guitars/edit/${idGuitar}`, form)
+            const res = await axiosClient.put(`artesanias/editar/${idArte}`, form)
 
-		const updatedGuitar = res.data.data
+            const updateArtesania = res.data.data
 
-		dispatch({
-			type: "UPDATE_GUITAR",
-			payload: updatedGuitar
-		})
+            dispatch({
+                type: "UPDATE_ARTESANIA",
+                payload: updateArtesania
+            })
 	}
-    */
+
+        const deleteArtesania = async (idArte) => {
+
+            const res = await axiosClient.delete(`artesanias/borrar/${idArte}`)
+
+}
+    
 
     //4. Retorno
     return (
@@ -106,11 +97,11 @@ const ArteState = (props) => {
             artesanias: globalState.artesanias,
             hola: globalState.hola,
             singleArte: globalState.singleArte,
-            changeText,
-            // getGuitars,
-            // getGuitar,
-            // createGuitar,
-            // updateGuitar
+            getArtesanias,
+            getArtesania,
+            createArtesania,
+            updateArtesania,
+            deleteArtesania
         }} >
                 {/* Es la representacion de todos los componentes del router - Outlet(de estado global) */}
             {props.children}

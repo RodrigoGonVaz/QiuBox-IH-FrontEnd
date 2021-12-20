@@ -3,12 +3,20 @@
 const reducer = (globalState, action) => {
     switch (action.type) {
 
-        case "CHANGE_TEXT":
+        case "GET_ARTESANIAS":
             return {
                 ...globalState,
-                hola: action.payload //action = dispatch
+                artesanias: action.payload //action = dispatch
             }
 
+        case "GET_ARTESANIA":
+        case "UPDATE_ARTESANIA":
+        case "DELETE_ARTESANIA":
+            return {
+                ...globalState,
+                singleArte: action.payload //action = dispatch
+            }
+        
 
 
         default:
