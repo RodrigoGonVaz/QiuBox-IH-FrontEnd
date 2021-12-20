@@ -1,3 +1,4 @@
+//tailwind.config.js
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -20,3 +21,4 @@ module.exports = {
   },
   plugins: [],
 }
+//Me quede en Semana 8 día 2 primer video
