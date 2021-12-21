@@ -40,7 +40,7 @@ const Artesanias = () => {
       </div>
       <div className="bg-white">
 					<div>
-						<div className="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+						<div className="m-10 mb-20 mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {artesanias.map((element, i) => {
 		return (
         <div className="wrapper bg-rosamx-600 antialiased text-gray-900">

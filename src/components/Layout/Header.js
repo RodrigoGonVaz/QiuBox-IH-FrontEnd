@@ -22,8 +22,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-wrap">
-        <nav className="flex w-screen justify-between bg-yellow-300 text-gray-600">
+      <header className=" flex flex-wrap">
+        <nav className="mb-32 flex w-screen justify-between bg-yellow-300 text-gray-600">
           <div className="w-full xl:px-12 py-6 px-5 flex space-x-12 items-center ">
             <Link className="text-2xl font-bold" to="/">
               <img
@@ -39,8 +39,8 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-gray-900" to="#">
-                  Productos
+                <Link className="hover:text-gray-900" to="/artesanias">
+                  Artesanias
                 </Link>
               </li>
               <li>
@@ -73,13 +73,10 @@ export default function Header() {
               </span>
             </div>
             <div className="hidden xl:flex items-center text-gray-600 space-x-5 items-center">
-
-              {/* <>
-								<Link to="/profile" className="text-base font-medium text-white hover:text-indigo-50">
-									Tu perfil
-								</Link>
-								<a onClick={() => logoutUser()} href="/" className="text-base font-medium text-white hover:text-indigo-50">Cerrar sesión</a>
-                <Link className="hover:text-gray-900" to="/">
+            {
+							currentUser.nombre ?
+								<>
+								<Link to="/profile" className="text-base font-medium text-rosamx-200 hover:text-rosamx-700">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -94,8 +91,19 @@ export default function Header() {
                     d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                   />
                 </svg>
-              </Link> 
-							</> */}
+								</Link>
+								<a onClick={() => logoutUser()} href="/" className="text-base font-medium text-rosamx-200 hover:text-rosamx-700">Cerrar sesión</a>
+								</>
+								:
+								<>
+									<Link to="/registro" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-rosamx-600 to-rosamx-300 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-rosamx-700 hover:to-indigo-700">
+										Crear cuenta
+									</Link>
+									<Link to="/iniciar-sesion" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-rosamx-600 to-rosamx-300 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-rosamx-700 hover:to-indigo-700">
+										Iniciar sesión
+									</Link>
+								</>
+						}
               
               <Link className="flex items-center hover:text-gray-900" to="#">
                 <svg
@@ -169,4 +177,3 @@ export default function Header() {
   );
 }
 
-//className="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-purple-700 hover:to-indigo-700">

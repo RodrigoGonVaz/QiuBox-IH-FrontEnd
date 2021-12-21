@@ -19,7 +19,7 @@ const Single = () => {
     return (
         <>
 
-<div>
+      <div>
         Página individual de Artesania
 
         <section className="text-gray-700 body-font overflow-hidden bg-white">

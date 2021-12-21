@@ -18,11 +18,12 @@ const Register = () => {
 
     const [newUser, setNewUser] = useState({
 		nombre: "",
-        userName: "",
-        userImage: "",
+    userName: "",
+    userImage: "",
 		email: "",
-        userShortBio: "",
-        estadoMx:"",
+    telefono:"",
+    userShortBio: "",
+    estadoMx:"",
 		password: "",
 		confirmarpassword: ""
 	})
@@ -64,6 +65,8 @@ const Register = () => {
                 <div className="w-full sm:w-auto sm:ml-auto mt-3 sm:mt-0"></div>
               </div>
               <div className="mt-5">
+              <form onSubmit={(event) => { handleSubmit(event) }}>
+
                 <div className="form">
                   <div>
                     <label className="text-lg font-semibold text-gray-600 py-2">
@@ -81,10 +84,16 @@ const Register = () => {
                         />
                       </div>
                       <label className="cursor-pointer ">
-                        <span className="focus:outline-none text-white text-md py-2 px-4 rounded-full bg-rosamx-700 hover:bg-green-500 hover:shadow-lg">
+                        {/* <span className="focus:outline-none text-white text-md py-2 px-4 rounded-full bg-rosamx-700 hover:bg-green-500 hover:shadow-lg">
                           Subir
-                        </span>
-                        <input type="file" className="hidden" />
+                        </span> */}
+                        <input
+                        placeholder="imagen URL"
+                        onChange={(event) => { handleChange(event)}}
+                        name="userImage" 
+                        type="text"
+                        value={'https://i.ibb.co/x133BKX/MrTaco.png'} 
+                        className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4" />
                       </label>
                     </div>
                   </div>
@@ -95,6 +104,7 @@ const Register = () => {
                         Nombre <abbr title="required" className="text-red-500">*</abbr>
                       </label>
                       <input
+                        onChange={(event) => { handleChange(event)}}
                         placeholder="Tacoberto"
                         className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
                         required="required"
@@ -111,6 +121,7 @@ const Register = () => {
                         Nombre de Usuario <abbr title="required" className="text-red-500">*</abbr>
                       </label>
                       <input
+                        onChange={(event) => { handleChange(event)}}
                         placeholder="MrTaco"
                         className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
                         required="required"
@@ -137,6 +148,8 @@ const Register = () => {
                         </span>
                       </div>
                       <input
+                        onChange={(event) => { handleChange(event)}}
+                        name="email"
                         type="text"
                         className="flex-shrink flex-grow flex-auto leading-normal w-px flex-1 border border-l-0 h-10 border-grey-light rounded-lg rounded-l-none px-3 relative focus:border-blue focus:shadow"
                         placeholder="mrtaco@mexaverse.com"
@@ -149,10 +162,11 @@ const Register = () => {
                         Telefono (+52)
                       </label>
                       <input
+                        onChange={(event) => { handleChange(event)}}
                         placeholder="5513843972"
                         className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
                         type="text"
-                        name="integration[street_address]"
+                        name="telefono"
                         id="integration_street_address"
                       />
                     </div>
@@ -183,10 +197,10 @@ const Register = () => {
                         Contraseña <abbr title="required" className="text-red-500">*</abbr>
                       </label>
                       <input
+                        onChange={(event) => { handleChange(event)}}
                         placeholder="Holamundo1"
                         className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
-                        
-						name="password"
+						            name="password"
                         required="required"
                         type="password"
                         id="password"
@@ -200,10 +214,10 @@ const Register = () => {
                         Confirmar Contraseña <abbr title="required" className="text-red-500">*</abbr>
                       </label>
                       <input
+                        onChange={(event) => { handleChange(event)}}
                         placeholder="Holamundo1"
-                        className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"
-                        
-						name="confirmarpassword"
+                        className="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4"          
+						            name="confirmarpassword"
                         required="required"
                         type="password"
                         id="confirmarpassword"
@@ -219,9 +233,10 @@ const Register = () => {
                       Description
                     </label>
                     <textarea
+                      onChange={(event) => { handleChange(event)}}
                       required=""
-                      name="message"
                       id=""
+                      name="userShortBio"
                       className="w-full min-h-[100px] max-h-[300px] h-28 appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg  py-4 px-4"
                       placeholder="Enter your comapny info"
                       spellCheck="false"
@@ -244,6 +259,7 @@ const Register = () => {
                     </button>
                   </div>
                 </div>
+              </form>
               </div>
             </div>
           </div>
