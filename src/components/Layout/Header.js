@@ -1,14 +1,31 @@
 // ./client/src/Layout/Header.js
-import React, { useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect, useContext} from 'react'
+import { Link } from 'react-router-dom'
+import UserContext from '../../context/User/UserContext'
 
 export default function Header() {
+
+	const ctx = useContext(UserContext)
+
+	const {
+		currentUser,
+		verifyingToken,
+		logoutUser
+	} = ctx
+
+	useEffect(() => {
+		verifyingToken()
+	}, [])
+
+
+
+
   return (
     <>
       <header className="flex flex-wrap">
         <nav className="flex w-screen justify-between bg-yellow-300 text-gray-600">
           <div className="w-full xl:px-12 py-6 px-5 flex space-x-12 items-center ">
-            <Link className="text-2xl font-bold" to="#">
+            <Link className="text-2xl font-bold" to="/">
               <img
                 className="h-12 w-auto"
                 src="https://i.ibb.co/RHg3b7c/Logo-Qiubox-F.png"
@@ -56,7 +73,13 @@ export default function Header() {
               </span>
             </div>
             <div className="hidden xl:flex items-center text-gray-600 space-x-5 items-center">
-              <Link className="hover:text-gray-900" to="#">
+
+              {/* <>
+								<Link to="/profile" className="text-base font-medium text-white hover:text-indigo-50">
+									Tu perfil
+								</Link>
+								<a onClick={() => logoutUser()} href="/" className="text-base font-medium text-white hover:text-indigo-50">Cerrar sesión</a>
+                <Link className="hover:text-gray-900" to="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -71,7 +94,9 @@ export default function Header() {
                     d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                   />
                 </svg>
-              </Link>
+              </Link> 
+							</> */}
+              
               <Link className="flex items-center hover:text-gray-900" to="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,6 +117,8 @@ export default function Header() {
                   <span className="h-3 w-3 relative inline-flex rounded-full bg-pink-600"></span>
                 </span>
               </Link>
+            
+
             </div>
           </div>
           <Link

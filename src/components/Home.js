@@ -1,13 +1,13 @@
 //Import
 import React, { useContext } from "react";
-//*import UserContext from '../context/User/UserContext'
+import UserContext from '../context/User/UserContext'
 
 const Home = () => {
-  // const ctx = useContext(UserContext)
+  const ctx = useContext(UserContext)
 
-  // const {
-  // 	verifyingToken
-  // } = ctx
+  const {
+  	verifyToken
+  } = ctx
 
   return (
     <>

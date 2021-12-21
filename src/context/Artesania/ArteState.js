@@ -84,10 +84,8 @@ const ArteState = (props) => {
 	}
 
         const deleteArtesania = async (idArte) => {
-
             const res = await axiosClient.delete(`artesanias/borrar/${idArte}`)
-
-}
+    }
     
 
     //4. Retorno
