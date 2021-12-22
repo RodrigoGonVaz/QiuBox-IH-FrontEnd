@@ -159,11 +159,12 @@ export default function Header(props) {
             </span>
           </Link>
           <div
-            onClick={() => setIsOpen(!isOpen)}
-            className="xl:hidden self-center mr-12 hover:text-gray-900"
-            to="#"
+              className="xl:hidden self-center mr-12 hover:text-gray-900"
           >
             <svg
+              onClick={() => setIsOpen(!isOpen)}
+              onTouch
+              to="#"
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               fill="none"
@@ -179,7 +180,9 @@ export default function Header(props) {
             </svg>
           </div>
         </nav>
+        <div className='ml-96 grid justify-items-end'>
             {isOpen && <NavLinks />}
+        </div>
       </header>
     </>
   );
