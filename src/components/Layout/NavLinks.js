@@ -5,19 +5,19 @@ import { Link } from 'react-router-dom'
 const NavLinks = () => {
     return (
         <>
-            <ul>
+            <ul className='ml-5 flex flex-col content-end'>
               <li>
-                <Link className="hover:text-rosamx-300" to="/">
+                <Link className="text-rosamx-600 hover:text-rosamx-700" to="/">
                   Home
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-gray-900" to="/artesanias">
+                <Link className="text-rosamx-600 hover:text-rosamx-700" to="/artesanias">
                   Artesanias
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-gray-900" to="#">
+                <Link className="text-rosamx-600 hover:text-rosamx-700" to="#">
                   Qiubox
                 </Link>
               </li>

@@ -12,12 +12,18 @@ const Home = () => {
   return (
     <>
       <section
-        className="header relative pt-16 items-center flex h-screen"
+        className="header relative items-center flex h-screen"
         style={{ maxHeight: 860 }}
       >
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
+                <img
+                  className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 lg:opacity-100 md:opacity-50 sm:opacity-50 -mt-48 sm:mt-0 w-10/12"
+                  src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/ill_header_3.png"
+                  alt="..."
+                  style={{ maxHeight: 860 }}
+                />
               <h2 className="font-semibold text-4xl text-blueGray-600">
                 Te invito a un hermoso recorrido a nuestra cultura Mexicana 
               </h2>
@@ -52,12 +58,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img
-          className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12"
-          src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/ill_header_3.png"
-          alt="..."
-          style={{ maxHeight: 860 }}
-        />
       </section>
 
       <section class="mt-40 pb-40 relative bg-blueGray-100">
