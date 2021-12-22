@@ -1,11 +1,16 @@
 // ./client/src/Layout/Header.js
-import React, {useEffect, useContext} from 'react'
+import React, {useEffect, useContext, useState} from 'react'
 import { Link } from 'react-router-dom'
 import UserContext from '../../context/User/UserContext'
+import NavLinks from './NavLinks'
 
-export default function Header() {
+
+
+export default function Header(props) {
 
 	const ctx = useContext(UserContext)
+
+  const [isOpen, setIsOpen] = useState(false)
 
 	const {
 		currentUser,
@@ -129,6 +134,7 @@ export default function Header() {
 
             </div>
           </div>
+          {/* carrito de compra */}
           <Link
             className="flex xl:hidden items-center mr-6 hover:text-gray-900"
             to="#"
@@ -152,7 +158,8 @@ export default function Header() {
               <span className="h-3 w-3 relative inline-flex rounded-full bg-pink-600"></span>
             </span>
           </Link>
-          <Link
+          <div
+            onClick={() => setIsOpen(!isOpen)}
             className="xl:hidden self-center mr-12 hover:text-gray-900"
             to="#"
           >
@@ -170,8 +177,9 @@ export default function Header() {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-          </Link>
+          </div>
         </nav>
+            {isOpen && <NavLinks />}
       </header>
     </>
   );

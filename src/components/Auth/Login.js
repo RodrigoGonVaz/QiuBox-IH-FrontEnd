@@ -46,9 +46,11 @@ export default function Login() {
         }}
       >
 
-  <div className="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div className="flex flex-col justify-center py-12 h-screen">
   <div className="bg-white py-8 px-4 shadow-2xl shadow-pink-900  sm:rounded-lg sm:px-10 sm:mx-auto sm:w-full sm:max-w-md">
+  <Link to="/">
     <img className="mx-auto h-12 w-auto" src="https://i.ibb.co/RHg3b7c/Logo-Qiubox-F.png" alt="Workflow" />
+  </Link>  
     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
       Iniciar sesión
     </h2>
