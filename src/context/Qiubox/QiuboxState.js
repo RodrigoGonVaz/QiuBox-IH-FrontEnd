@@ -60,7 +60,7 @@ const QiuboxState = props => {
 			}]
 		}
 
-		const res = await axiosClient.post("checkout/create-checkout-session", form)
+		const res = await axiosClient.post("api/checkout/create-checkout-session", form)
 
 			
 		dispatch({

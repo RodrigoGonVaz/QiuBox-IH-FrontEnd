@@ -174,13 +174,13 @@ export default function SingleQiubox() {
                     <button className="border-2 border-gray-300 ml-1 bg-sky-900 rounded-full w-6 h-6 focus:outline-none"></button>
                   </div>
                   <div className="flex ml-6 items-center">
-                    <span className="mr-3">Size</span>
+                    <span className="mr-3">Cantidad</span>
                     <div className="relative">
                       <select className="rounded border appearance-none border-gray-400 py-2 focus:outline-none focus:border-red-500 text-base pl-3 pr-10">
-                        <option>SM</option>
-                        <option>M</option>
-                        <option>L</option>
-                        <option>XL</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
                       </select>
                       <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
                         <svg
@@ -200,7 +200,7 @@ export default function SingleQiubox() {
                 </div>
                 <div className="flex flex-wrap">
                   <span className="title-font mr-5 font-medium text-2xl text-gray-900">
-                    ${singleQiubox.artePrice}.00 MXN
+                    ${singleQiubox.qiuboxPrice}.00 MXN
                   </span>
 
                   <button 
