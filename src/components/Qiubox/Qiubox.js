@@ -28,7 +28,7 @@ export default function Qiubox() {
 	<section class="py-14 lg:py-24">
         <div class="container">
           <h2 class="text-center text-3xl lg:text-4xl text-primary-dark-blue mb-5 lg:text-left lg:mb-10">
-            Galeria de  Artesanias Mexicanas
+            ¿Qiubox en tu caja?
           </h2>
           <div class="grid grid-cols-1 gap-5 lg:gap-7 lg:grid-cols-4">
 				{

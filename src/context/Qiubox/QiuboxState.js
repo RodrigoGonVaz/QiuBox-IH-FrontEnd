@@ -32,7 +32,7 @@ const QiuboxState = props => {
 		const res = await axiosClient.get("qiubox/leer")
 
 		dispatch({
-			type: "GET_ALL_Qiubox",
+			type: "GET_ALL_QIUBOX",
 			payload: res.data.data
 		})
 
@@ -60,7 +60,7 @@ const QiuboxState = props => {
 			}]
 		}
 
-		const res = await axiosClient.post("api/checkout/create-checkout-session", form)
+		const res = await axiosClient.post("checkout/create-checkout-session", form)
 
 			
 		dispatch({
