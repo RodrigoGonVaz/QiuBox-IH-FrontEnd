@@ -45,7 +45,10 @@ const Home = () => {
                     </div>
                 </section>
 
+                <div class="object-center mt-12 flex justify-center content-center text-center">
                 <svg
+                  height="700px" 
+                  width="700px"
                   version="1.1"
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -325,6 +328,7 @@ const Home = () => {
                   c3.492-3.759,5.805-8.64,6.264-14.05c0.015-0.184-0.837-11.808,9.577-19.978v22.337H359.352z"
                   />
                 </svg>
+                </div>
 
                 <section class="py-14 bg-neutral-light-grayish-blue lg:py-24">
                     <div class="container text-center lg:text-left">

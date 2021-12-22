@@ -39,7 +39,7 @@ export default function Header(props) {
             </Link>
             <ul className="hidden md:flex mx-auto px-5 font-semibold space-x-12">
               <li>
-                <Link className="hover:text-gray-900" to="#">
+                <Link className="hover:text-gray-900" to="/">
                   Home
                 </Link>
               </li>
@@ -49,7 +49,7 @@ export default function Header(props) {
                 </Link>
               </li>
               <li>
-                <Link className="hover:text-gray-900" to="#">
+                <Link className="hover:text-gray-900" to="/qiubox">
                   Qiubox
                 </Link>
               </li>
@@ -180,7 +180,7 @@ export default function Header(props) {
             </svg>
           </div>
         </nav>
-        <div className='ml-96 grid justify-items-end'>
+        <div className='ml-10 grid justify-items-end'>
             {isOpen && <NavLinks />}
         </div>
       </header>
