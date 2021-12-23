@@ -27,7 +27,7 @@ export default function Header(props) {
 
   return (
     <>
-      <header className=" flex flex-wrap">
+      <header className=" flex flex-wrap bg-yellow-300" >
         <nav className="flex w-screen justify-between bg-yellow-300 text-gray-600">
           <div className="w-full xl:px-12 py-6 px-5 flex space-x-12 items-center ">
             <Link className="text-2xl font-bold" to="/">
@@ -180,7 +180,7 @@ export default function Header(props) {
             </svg>
           </div>
         </nav>
-        <div className='ml-10 grid justify-items-end'>
+        <div className='bg-yellow-300 ml-10 grid justify-items-end'>
             {isOpen && <NavLinks />}
         </div>
       </header>
