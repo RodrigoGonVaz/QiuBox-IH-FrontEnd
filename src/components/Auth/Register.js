@@ -238,7 +238,7 @@ const Register = () => {
                       id=""
                       name="userShortBio"
                       className="w-full min-h-[100px] max-h-[300px] h-28 appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg  py-4 px-4"
-                      placeholder="Enter your comapny info"
+                      placeholder="Soy de Oaxaca, y desde pequeño me dedico al arte Huichol..."
                       spellCheck="false"
                     ></textarea>
                     <p className="text-md text-gray-400 text-left my-3">
@@ -246,16 +246,16 @@ const Register = () => {
                     </p>
                   </div>
                   <p className="text-md text-red-500 text-right my-3">
-                    Required fields are marked with an asterisk{" "}
+                    Campos requeridos estan con asterico{" "}
                     <abbr title="Required field">*</abbr>
                   </p>
                   <div className="mt-5 text-right md:space-x-3 md:block flex flex-col-reverse">
                     <button className="mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-full hover:shadow-lg hover:bg-gray-100">
                       {" "}
-                      Cancel{" "}
+                      Cancelar{" "}
                     </button>
                     <button className="mb-2 md:mb-0 bg-green-400 px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-green-500">
-                      Save
+                      Guardar
                     </button>
                   </div>
                 </div>
