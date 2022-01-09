@@ -43,8 +43,8 @@ const Home = () => {
                 <section id="hero" class="container h-screen relative w-60">
                 <div class="lg:block w-3/4 h-3/4 absolute">
                     <div class="bg-image-mockups absolute z-20 h-full w-full bg-no-repeat bg-right-top -right-72 xl:-right-28"></div>
-                    <div class="bg-header-mobile bg-custom-mobile-header-size absolute w-full h-full bg-no-repeat lg:hidden"></div>
-                    <div class="bg-header-desktop absolute w-full h-full bg-no-repeat hidden lg:block bg-left -right-42.6%"></div>
+                    <div class="bg-header-mobile1 bg-custom-mobile-header-size absolute w-full h-full bg-no-repeat lg:hidden"></div>
+                    <div class="bg-header-desktop1 absolute w-full h-full bg-no-repeat hidden lg:block bg-left -right-42.6%"></div>
                     <div class="bg-image-mockups absolute z-20 w-full h-full bg-no-repeat bg-top -top-12 md:-top-16 bg-custom-mobile-mockup-size lg:hidden"></div>
                 </div>
                     <div class="container h-screen relative z-20">
