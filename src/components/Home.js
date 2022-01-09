@@ -23,13 +23,30 @@ const Home = () => {
     <div id="__next">
 
             <div class="relative overflow-hidden">
-                <div class="hidden lg:block w-full h-full absolute">
+              <section id="hero" class="container h-screen relative">
+                <div class="lg:block w-full h-full absolute">
                     <div class="bg-image-mockups absolute z-20 h-full w-full bg-no-repeat bg-right-top -right-72 xl:-right-28"></div>
-                </div>
-                <section id="hero" class="relative">
                     <div class="bg-header-mobile bg-custom-mobile-header-size absolute w-full h-full bg-no-repeat lg:hidden"></div>
                     <div class="bg-header-desktop absolute w-full h-full bg-no-repeat hidden lg:block bg-left -right-42.6%"></div>
                     <div class="bg-image-mockups absolute z-20 w-full h-full bg-no-repeat bg-top -top-12 md:-top-16 bg-custom-mobile-mockup-size lg:hidden"></div>
+                </div>
+                <div class="absolute h-full w-full" >
+                          <iframe  src='https://my.spline.design/untitled-a1d202b1924bca8ff987554217ad806d/' width='100%' height='100%' frameborder='0' title="3d">
+                          </iframe>
+                </div>
+                <div class="absolute xs:hidden sm:hidden md:hidden lg:hidden">
+                          <iframe  src='https://my.spline.design/untitled-a1d202b1924bca8ff987554217ad806d/' width='100%' height='100%' frameborder='0' title="3d">
+                          </iframe>
+                </div>
+              </section>
+              
+                <section id="hero" class="container h-screen relative w-60">
+                <div class="lg:block w-3/4 h-3/4 absolute">
+                    <div class="bg-image-mockups absolute z-20 h-full w-full bg-no-repeat bg-right-top -right-72 xl:-right-28"></div>
+                    <div class="bg-header-mobile bg-custom-mobile-header-size absolute w-full h-full bg-no-repeat lg:hidden"></div>
+                    <div class="bg-header-desktop absolute w-full h-full bg-no-repeat hidden lg:block bg-left -right-42.6%"></div>
+                    <div class="bg-image-mockups absolute z-20 w-full h-full bg-no-repeat bg-top -top-12 md:-top-16 bg-custom-mobile-mockup-size lg:hidden"></div>
+                </div>
                     <div class="container h-screen relative z-20">
                         <div class="h-full flex flex-col justify-end pb-4 lg:pb-0 lg:w-96 lg:justify-center">
                             <div class="h-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
@@ -45,6 +62,7 @@ const Home = () => {
                     </div>
                 </section>
 
+                <section id="hero" class="relative">
                 <div class="object-center mt-12 flex justify-center content-center text-center">
                 <svg
                   height="700px" 
@@ -329,7 +347,8 @@ const Home = () => {
                   />
                 </svg>
                 </div>
-
+                </section>
+                
                 <section class="py-14 bg-neutral-light-grayish-blue lg:py-24">
                     <div class="container text-center lg:text-left">
                         <div class="grid lg:grid-cols-2 mb-12 lg:mb-16">
